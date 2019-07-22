@@ -3,7 +3,7 @@ MAINTAINER Krishna Kumar <krishnak@utexas.edu>
 
 # Update to latest packages, remove vim-minimal & Install Git, GCC, Clang, Autotools and VIM
 RUN dnf update -y && \
-    dnf remove -y vim-minimal python && \
+    dnf remove -y vim-minimal && \
     dnf install -y boost boost-devel clang clang-analyzer clang-tools-extra cmake cppcheck eigen3-devel \
                    findutils gcc gcc-c++ git kernel-devel lcov make tar tbb tbb-devel \
                    valgrind vim wget && \
